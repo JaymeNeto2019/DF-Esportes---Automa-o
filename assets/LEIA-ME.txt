@@ -1,0 +1,2 @@
+Opcional: salve aqui o logotipo oficial como logo.png (PNG transparente).
+Sem esse arquivo, a arte mostra o texto DF ESPORTES.
