@@ -232,7 +232,7 @@ def main():
         STATE.write_text(json.dumps({'ids': [i['id'] for i in items]}, ensure_ascii=False, indent=2) + '\n')
         print('Primeira execução: matérias existentes registradas, sem envio.')
         return
-    selected = [items[0]] if test else [i for i in reversed(items) if i['id'] not in seen]
+    selected = list(reversed(items[:2])) if test else [i for i in reversed(items) if i['id'] not in seen]
     if not selected:
         print('Nenhuma matéria nova.')
         return
